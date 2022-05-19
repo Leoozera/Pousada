@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?815adw');
+  src:  url('fonts/icomoon.eot?815adw#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?815adw') format('truetype'),
+    url('fonts/icomoon.woff?815adw') format('woff'),
+    url('fonts/icomoon.svg?815adw#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bed:before {
+  content: "\e905";
+}
+.icon-pool:before {
+  content: "\e906";
+}
+.icon-miscellaneous_services:before {
+  content: "\e900";
+}
+.icon-home_repair_service:before {
+  content: "\e901";
+}
+.icon-cleaning_services:before {
+  content: "\e902";
+}
+.icon-room_service:before {
+  content: "\e903";
+}
+.icon-local_laundry_service:before {
+  content: "\e904";
+}

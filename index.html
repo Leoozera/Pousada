@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PicoliPousadas - Home </title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="main-image">
+            <header>
+                <img src="img/semfundo.png" name="logo header" id="logo-header" alt="Logo - PP">
+                <nav id="navbar">
+                    <ul>
+                        <li class="selected">Início</li>
+                        <li>Acomodações</li>
+                        <li>Serviços</li>
+                        <li>Experiências</li>
+                        <li>Fale conosco</li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="main-text">
+                <h1>Picoli Pousadas</h1>
+                <p>Conheça os lençóis maranhenses na pousada mais aconchegante</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="geral-container">
+        <div class="geral-left">
+            <h2>Pousada Picoli</h2>
+            <p>Toda a infraestrutura de nossa pousada foi pensado para você desfrutar os cenários paradisíacos
+                dos
+                Lençóis Maranhenses.</p>
+            <br>
+            <p>O local perfeito para revitalizar sua concepção de maravilha, de passeios encantadores a uma
+                instalação
+                aconchegante e no alcance de tudo e todos.</p>
+            <p>Nossa equipe equipada e preparada para atender todas as necessidades, com um atendimento
+                personalizado
+                individualmente.</p>
+            <br>
+            <p>Zelando pela busca de momentos inesqueciveis na vida de nossos hóspedes.</p>
+            <br>
+            <p>Entre as exclusividades, nosso menu de passeios sob medidas para que possam conhecer o Maranhão
+                da
+                forma
+                que merecem.</p>
+            <p>Sem contar das diversas áreas como: Piscinas, Quadras, SPA e áreas para seu animal de estimação.
+            </p>
+        </div>
+
+        <div class="geral-right">
+            <img class="on" id="hotel1" src="img/hotel.jpg">
+            <img class="off" id="hotel2" src="img/hotel2.jpg">
+        </div>
+    </section>
+
+    <section class="services">
+        <h3>Serviços inclusos</h3>
+        <div class="container-services">
+            <div class="box">
+                <i class="icon-bed"></i>
+                <p>Serviço de quarto</p>
+            </div>
+
+            <div class="box">
+                <i class="icon-room_service"></i>
+                <p>Serviço de quarto</p>
+            </div>
+
+            <div class="box">
+                <i class="icon-pool"></i>
+                <p>Piscina</p>
+            </div>
+
+            <div class="box">
+                <i class="icon-cleaning_services"></i>
+                <p>Limpeza e organização</p>
+            </div>
+
+            <div class="box">
+                <i class="icon-miscellaneous_services"></i>
+                <p>Manutenção</p>
+            </div>
+
+            <div class="box">
+                <i class="icon-home_repair_service"></i>
+                <p>Co-work</p>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <img src="img/semfundo.png" name="logo header" id="logo-footer" alt="Logo - PP">
+        <span class="name-footer">
+            <p>Picoli Pousadas</p>
+        </span>
+        <div class="right-footer">
+            <h4>Contato</h4>
+            <h3>Termos</h3>
+            <p>Termos de privacidade</p>
+            <p>Termos de uso</p>
+        </div>
+
+        <span class="copyright">
+            <p>© Todos os direitos reservados - CAPANGAS DO TIO.</p>
+        </span>
+    </footer>
+
+    <script>
+        // CARROSSEL
+        const foto1 = document.getElementById("hotel1");
+        const foto2 = document.getElementById("hotel2");
+
+        setInterval(() => {
+            if (foto1.classList.contains("on")) {
+                foto1.classList.remove('on')
+                foto1.classList.add('off')
+
+                foto2.classList.add('on')
+                foto2.classList.remove('off')
+            } else {
+                foto1.classList.remove('off')
+                foto1.classList.add('on')
+
+                foto2.classList.add('off')
+                foto2.classList.remove('on')
+            }
+        }, 12000)
+
+    </script>
+
+</body>
+
+</html>
